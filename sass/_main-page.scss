@@ -103,12 +103,8 @@
 	a {
 	text-decoration:none;
 	display:block;
-	/* @include background-image(linear-gradient($green, darken($green, 10%))); */ /* FLATTEN */
-	@include border-radius(2px); /* FLATTEN */
-	@include box-shadow(rgba(white, 0.25) 0px 1px 1px 0px inset);
-	@include text-shadow(black -1px -1px 3px, rgba(#000061, 0.5) 0px 1px 1px);
-	background-color:$green;
-	/* border-left:solid 1px $grey-80; */ /* FLATTEN */
+	@include border-radius(2px);
+	background-color:$blue;
 	color:$white;
 	margin:0.25em 0;
 	padding:0.5em 2em 0.5em 3em;
@@ -117,8 +113,7 @@
 	text-overflow: ellipsis;
 	white-space:nowrap;
 	&:hover {
-		/* @include background-image(linear-gradient(darken($green, 2%), darken($green, 12%))); */ /* FLATTEN */
-      background-color: $darkgreen; /* FLATTEN */
+      background-color: $orange;
 		color:$white;
 	}
 	&:after {

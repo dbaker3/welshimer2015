@@ -77,7 +77,7 @@
 		<nav class="secondary-menu menu-text"><div class="secondary-menu-main"><?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?></div><div class="secondary-menu-select"><select><option>Go to...</option></select></div></nav>
 		<hgroup>
 			<h4 class="milligan-logo"><a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'description' ); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/images/milligan-logo.png" /></a></h4>
-			<h4 class="welshimer-logo"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo( 'template_url' ); ?>/images/welshimer-logo.png" /></a></h4>
+			<h4 class="welshimer-logo">P.H. Welshimer Memorial Library</h4>
 		</hgroup>
 	</header><!-- #masthead .site-header -->
 

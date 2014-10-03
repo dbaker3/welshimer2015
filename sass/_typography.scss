@@ -39,7 +39,7 @@
 }
 
 .alert {
-  @include border-radius();  /* FLATTEN */
+  @include border-radius();
   font-size:0.8em;
   padding:0.75em;
 }
@@ -63,7 +63,7 @@
     &:focus {background-color:$white;}
 }
 
-.laylah { //This is a style for hiding text off the screen
+.laylah { /* This is a style for hiding text off the screen */
   left: -9999px;
   position: absolute;
   top: -9999px;

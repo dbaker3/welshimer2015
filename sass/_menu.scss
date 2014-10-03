@@ -1,8 +1,7 @@
 /* =Menu
 ----------------------------------------------- */
 	#mobile-menu-wrapper {
-		@include nav-gradient();
-		@include box-shadow();
+      background:$dark-grey;
 		height:50px;
 		color:$white;
 		display:block;
@@ -27,8 +26,7 @@
 	}
 	.icon-bar {
 	    background-color: #F5F5F5;
-	    @include border-radius();  /* FLATTEN */
-	    @include box-shadow();
+	    @include border-radius();
 	    display: block;
 	    margin-bottom: 0.3em;
 	    height: 3px;
@@ -83,7 +81,6 @@
 	}
 
 	.main-navigation .sub-menu {
-		@include box-shadow();
 		display:none;
 		margin:0;
 	}
@@ -97,12 +94,8 @@
 		}
 	}
 	.main-navigation li:hover > a {
-		background:$green;
-		@include background-image(linear-gradient(lighten($green, 3%), darken($green, 3%)));
-		border-top:solid 1px lighten($green, 3%);
-		border-left:solid 1px lighten($green, 7%);
-		border-bottom:solid 1px darken($green, 7%);
-		border-right:solid 1px darken($green, 7%);
+		background:$orange;
+      @include transition();
 	}
 	.display-toggle{
 		display:block !important;
@@ -199,10 +192,7 @@
 		.display-toggle{
 		}
 		.main-navigation {
-			@include nav-gradient();
-			@include box-shadow();
-			/* @include border-radius(); */ /* FLATTEN */
-			/* border:solid 1px $green; */ /* FLATTEN */
+         background:$dark-grey;
 			clear: both;
 			display: block;
 			font-size:1em;
@@ -222,7 +212,7 @@
 			position: relative;
 		}
 		.main-navigation li a {
-			@include nav-gradient();
+         background:$dark-grey;
 			border-left:solid 1px lighten($dark-grey, 1%);
 			border-right:solid 1px darken($dark-grey, 2%);
 			display: block;
@@ -230,7 +220,6 @@
 			text-decoration: none;
 		}
 		.main-navigation .sub-menu {
-			/* @include border-bottom-radius(); */ /* FLATTEN */
 			@include transition();
 			border:solid 1px darken($grey, 5%);
 			border-top:none;
@@ -274,7 +263,6 @@
 /** Secondary Menu **/
 .secondary-menu-main{
 	display:none;
-	/* @include main-sprite(loginbg); */ /* FLATTEN */
 }
 .secondary-menu-select{
 	position:fixed;
@@ -288,7 +276,6 @@
 @media all and (min-width:800px){
 	.secondary-menu-main {
 		display:block;
-		/* @include border-top-right-radius(0.5em); */ /* FLATTEN */
 		width:32em;
 		position:absolute;
 		top:5px;

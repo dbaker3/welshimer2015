@@ -133,15 +133,15 @@ th {
 
 /* Links */
 a {
-	color: $green;
+	color: $black;
 }
 a:visited {
-	color: darken($green, 5%);
+	color: lighten($black, 5%);
 }
 a:hover,
 a:focus,
 a:active {
-	color: $green;
+	color: $black;
 }
 
 /* Alignment */

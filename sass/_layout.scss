@@ -25,45 +25,49 @@ body { //The whole page, placed on the body tag
 	}
 }
 .site-header{
-	background-color:$green;
-	/* background-image:$header-background-image; */ /* FLATTEN */
+	background-color:$blue;
 	height:8.5em;
-	border-bottom:solid 2px $green;
+	border-bottom:solid 2px $black;
 	@media all and (min-width:600px){
 		height:11em;
 	}
 	@media all and (min-width:800px){
 		height:16em;
-		@include border-top-radius(2px); /* FLATTEN */
+		@include border-top-radius(2px);
 		border: $default-border;
 	}
 }
 .milligan-logo {
-	width:29.5em;
+	width:25em;
 	margin:1em 0 0 0.5em;
 	float:left;
 	img {width:100%; height:auto;}
 	@media all and (min-width:600px){
-		width:40em;
+		width:36em;
 		margin:1em 0 0 1em;
 	}
 	@media all and (min-width:800px){
 		width:42em;
-		margin:2em 0 0 2em;
 	}
 }
 .welshimer-logo {
 	width:31.5em;
-	margin:0 0 0 0.5em;
+   font-family: "helvetica", "arial", sans-serif;
+   font-style:normal;
+   font-size:1.5em;
+   color:$white;
+	margin:0 0 0 0.4em;
 	float:left;
 	img {width:100%; height:auto;}
 	@media all and (min-width:600px){
-		width:46em;
-		margin:0 0 0 4em;
+		/* width:46em; */
+      font-size:2em;
+		margin:0 0 0 0.5em;
 	}
 	@media all and (min-width:800px){
-		width:52em;
-		margin:0 0 0 8em;
+		/* width:52em; */
+      font-size:3em;
+		margin:0 0 0 0.3em;
 	}
 }
 .social-menu {
@@ -91,15 +95,13 @@ body { //The whole page, placed on the body tag
 	}
 }
 #page { //The "page" as in, the content
-	background-color:$tan;
-	/* background-image:$page-background-image; */ /* FLATTEN */
+	background-color:$milgray;
 	position:relative;
 	margin:0;
 	width:100%;
 	overflow:hidden;
 	@media all and (min-width:800px){
-		@include border-radius(2px);  /* FLATTEN */
-		/* @include box-shadow(0px 5px 20px -6px $black); */ /* FLATTEN */
+		@include border-radius(2px);
 		margin:0 2%;
 		max-width:960px;
 		overflow:visible;
@@ -131,12 +133,10 @@ body { //The whole page, placed on the body tag
 	position:absolute;
 		top:10em;
 		right:-21em;
-	/* @include box-shadow(); */ /* FLATTEN */
-	@include border-radius(); /* FLATTEN */
+	@include border-radius();
 	z-index:99;
 	@media all and (min-width:800px){
-		@include border-left-radius(); /* FLATTEN */
-		/* border:solid 1px $green; */ /* FLATTEN */
+		@include border-left-radius();
 		right:-0.5%;
 		top:15em;
 	}
@@ -151,7 +151,6 @@ body { //The whole page, placed on the body tag
 	background-color:$dark-grey;
 	border-right:solid 1px darken($dark-grey, 5%);
 	z-index:0;
-	/* @include box-shadow(black -5px 5px 6px -6px, lighten($dark-grey, 5%) -1px 0px 0px 0px inset); */ /* FLATTEN */
 	&:after {
 		font-family:icon-font;
 		font-size:1em;
@@ -181,29 +180,26 @@ body { //The whole page, placed on the body tag
 	clear:both;
 }
 .site-footer {
+   background:$dark-grey;
 	clear:both;
 	width: 100%;
 	text-align:center;
-	height:12em;
+	height:7em;
 	border-top:$default-border;
 	border-bottom:$default-border;
-	/* @include box-shadow(0 0 5px 5px rgba($black, 0.25) inset); */ /* FLATTEN */
-	@include background-image(linear-gradient(darken($dark-grey, 2%), lighten($dark-grey, 2%)));
 	@media all and (min-width:800px){
 		border:$default-border;
-		@include border-bottom-radius(2px); /* FLATTEN */
+		@include border-bottom-radius(2px);
 	}
 }
 
 .footer-logo {
-	margin:0.5em 0;
 	display:block;
 	width:100%;
 	text-align:center;
-	/* img {
-		max-width:10em;
-		min-width:5em;
-		} */
+	img {
+		width:18em;
+	} 
 }
 
 .site-info {
