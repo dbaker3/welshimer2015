@@ -17,7 +17,7 @@ body { //The whole page, placed on the body tag
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	min-width:320px;
-	max-width:960px;
+	max-width:1024px;
 	position:relative;
 	@media all and (min-width:800px) {
 		min-width:900px;
@@ -52,22 +52,22 @@ body { //The whole page, placed on the body tag
 }
 .welshimer-logo {
 	width:31.5em;
-   font-family: "helvetica", "arial", sans-serif;
+   font-family: "open sans", sans-serif;
    font-style:normal;
    font-size:1.5em;
    color:$white;
-	margin:0 0 0 0.4em;
+	margin:-0.2em 0 0 0.4em;
 	float:left;
 	img {width:100%; height:auto;}
 	@media all and (min-width:600px){
 		/* width:46em; */
       font-size:2em;
-		margin:0 0 0 0.5em;
+		margin:-0.2em 0 0 0.5em;
 	}
 	@media all and (min-width:800px){
 		/* width:52em; */
       font-size:3em;
-		margin:0 0 0 0.3em;
+		margin:-0.2em 0 0 0.3em;
 	}
 }
 .social-menu {
@@ -103,7 +103,7 @@ body { //The whole page, placed on the body tag
 	@media all and (min-width:800px){
 		@include border-radius(2px);
 		margin:0 2%;
-		max-width:960px;
+		max-width:1024px;
 		overflow:visible;
 		width:96%;
 
