@@ -1,7 +1,7 @@
 # http_path = "/"
 css_dir = "."
 sass_dir = "./sass"
-images_dir = "./images"
+images_dir = "images"
 fonts_dir = "./fonts"
 javascripts_dir = "./js"
 output_style = :compressed

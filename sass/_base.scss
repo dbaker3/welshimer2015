@@ -28,6 +28,7 @@ $blue		   : #40abba;
 $orange     : #ea7125;
 $milgray    : #ebe8e4;
 $milwhite   : #f7f7f7;
+$darkdark   : #262626;
 
 
 $experimental-support-for-svg: true;
@@ -103,7 +104,7 @@ $default-border-radius			: 2px;
 $default-border 				   : solid 2px $black;
 
 /*Background Images*/
-$site-background-image			: image-url("site-background.jpg");
+$site-background-image			: image-url("bg.png");
 
 @import "main/*.png";
 @include all-main-sprites;

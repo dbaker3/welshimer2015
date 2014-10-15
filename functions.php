@@ -71,6 +71,7 @@ function welshimer2013_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'welshimer2013' ),
 		'secondary' => __( 'Secondary Menu', 'welshimer2013' ),
+      'wiki' => __( 'Wiki', 'welshimer2013' ),
 	) );
 
 	/**
@@ -125,4 +126,8 @@ add_action('before_sidebar', 'welshimer2013_before_sidebar');
 
 // Stop WP from inserting <p>'s and <br>'s (dbaker)
 remove_filter('the_content', 'wpautop');
+
+// Remove admin bar on front-end for all users - dbaker 10-15-14
+add_filter('show_admin_bar', '__return_false');
+
 ?>

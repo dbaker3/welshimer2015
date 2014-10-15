@@ -1,6 +1,7 @@
 <?php
 /**
  * The Header for our theme.
+ * Checks if page is using wiki-page template and displays different content if true
  *
  * Displays all of the <head> section and everything up till <div id="main">
  *
@@ -61,7 +62,13 @@
 		<h1 class="assistive-text"><?php _e( 'Menu', 'welshimer2013' ); ?></h1>
 		<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'welshimer2013' ); ?>"><?php _e( 'Skip to content', 'welshimer2013' ); ?></a></div>
 
-		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+      <?php // Show wiki menu if using wiki template
+      if (is_page_template('wiki-page.php')) {      
+         wp_nav_menu( array( 'theme_location' => 'wiki' ) );
+      }
+      else {
+         wp_nav_menu( array( 'theme_location' => 'primary' ) ); 
+      } ?>
 			<div class="social-menu">
 				<ul>
 					<li><a href="http://milliganlibrary.wordpress.com/" target="_blank"></a></li><!--Library Blog-->
@@ -76,8 +83,17 @@
 	<header id="masthead" class="site-header" role="banner">
 		<nav class="secondary-menu menu-text"><div class="secondary-menu-main"><?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?></div><div class="secondary-menu-select"><select><option>Go to...</option></select></div></nav>
 		<hgroup>
+         <?php if (is_page_template('wiki-page.php')) { ?>
+            <h4 class="milligan-logo"><a href="<?php echo home_url( '/wiki' ); ?>" title="<?php bloginfo( 'description' ); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/images/wiki-logo.png" /></a></h4>
+         <?php }
+         else { ?>
+            <h4 class="milligan-logo"><a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'description' ); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/images/milligan-logo.png" /></a></h4>
+            <h4 class="welshimer-logo">P.H. Welshimer Memorial Library</h4>
+         <?php } ?>
+         
+         <!--
 			<h4 class="milligan-logo"><a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'description' ); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/images/milligan-logo.png" /></a></h4>
-			<h4 class="welshimer-logo">P.H. Welshimer Memorial Library</h4>
+         -->
 		</hgroup>
 	</header><!-- #masthead .site-header -->
 
