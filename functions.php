@@ -128,6 +128,5 @@ add_action('before_sidebar', 'welshimer2013_before_sidebar');
 remove_filter('the_content', 'wpautop');
 
 // Remove admin bar on front-end for all users - dbaker 10-15-14
-add_filter('show_admin_bar', '__return_false');
-
+show_admin_bar(false);
 ?>

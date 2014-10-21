@@ -19,7 +19,7 @@ body {
 	/*background-attachment: fixed;*/
 	min-width:320px;
 	max-width:1100px;
-	position:relative;
+	position:static;
 	@media all and (min-width:800px) {
 		min-width:960px;
 		margin:0 auto;
@@ -39,36 +39,34 @@ body {
 	}
 }
 .milligan-logo {
-	width:25em;
-	margin:1em 0 0 0.5em;
+	width:30em;
+	margin:1.5em 0 0 0.5em;
 	float:left;
 	img {width:100%; height:auto;}
 	@media all and (min-width:600px){
-		width:36em;
+		width:46em;
 		margin:1em 0 0 1em;
 	}
 	@media all and (min-width:800px){
-		width:42em;
+      margin-top:-2.6em;
+		width:60em;
 	}
 }
 .welshimer-logo {
-	width:31.5em;
    font-family: "open sans", sans-serif;
    font-style:normal;
+   text-shadow: 1px 1px 20px #535353;
    font-size:1.5em;
    color:$white;
-	margin:-0.2em 0 0 0.4em;
+	margin:-1.3em 0 0 3.2em;
 	float:left;
-	img {width:100%; height:auto;}
 	@media all and (min-width:600px){
-		/* width:46em; */
-      font-size:2em;
-		margin:-0.2em 0 0 0.5em;
+      font-size:3em;
+		margin:-1.3em 0 0 2.5em;
 	}
 	@media all and (min-width:800px){
-		/* width:52em; */
-      font-size:3em;
-		margin:-0.2em 0 0 0.3em;
+      font-size:4em;
+		margin:-1.2em 0 0 2.3em;
 	}
 }
 .social-menu {
@@ -184,18 +182,19 @@ body {
 	clear:both;
 }
 .site-footer {
-   background:$dark-grey;
+   background:$milgray;
+   color:$darkdark !important;
 	clear:both;
 	width: 100%;
 	text-align:center;
 	height:7em;
 	/*border-top:$default-border;
 	border-bottom:$default-border;*/
-	@media all and (min-width:800px){
-      background:$milgray;
+/*	@media all and (min-width:800px){
+      background:$milgray; */
 		/*border:$default-border;
 		@include border-bottom-radius(2px);*/
-	}
+	/*}*/
 }
 
 .footer-logo {

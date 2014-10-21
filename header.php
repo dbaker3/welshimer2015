@@ -58,7 +58,8 @@
 		</button>
 	</div>
 	<div id="primary-menu" class="menu-text">
-		<nav role="navigation" class="main-navigation">
+		<div id="topbar"></div>
+      <nav role="navigation" class="main-navigation">
 		<h1 class="assistive-text"><?php _e( 'Menu', 'welshimer2013' ); ?></h1>
 		<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'welshimer2013' ); ?>"><?php _e( 'Skip to content', 'welshimer2013' ); ?></a></div>
 
@@ -87,7 +88,7 @@
             <h4 class="milligan-logo"><a href="<?php echo home_url( '/wiki' ); ?>" title="<?php bloginfo( 'description' ); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/images/wiki-logo.png" /></a></h4>
          <?php }
          else { ?>
-            <h4 class="milligan-logo"><a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'description' ); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/images/milligan-logo.png" /></a></h4>
+            <h4 class="milligan-logo"><a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'description' ); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/images/head-logo.png" /></a></h4>
             <h4 class="welshimer-logo">P.H. Welshimer Memorial Library</h4>
          <?php } ?>
          

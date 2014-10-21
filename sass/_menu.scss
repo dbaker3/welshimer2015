@@ -47,9 +47,9 @@
 		list-style:none;
 	}
 	.main-navigation li a {
-		border-top:solid 1px lighten($grey, 7%);
+		/*border-top:solid 1px lighten($grey, 7%);*/
 		border-left:solid 1px lighten($grey, 7%);
-		border-bottom:solid 1px darken($grey, 7%);
+		/*border-bottom:solid 1px darken($grey, 7%);*/
 		border-right:solid 1px darken($grey, 7%);
 		color:$white;
 		display:block;
@@ -191,15 +191,24 @@
 	@media all and (min-width:800px) {
 		.display-toggle{
 		}
+      #topbar {
+         background-color: $darkdark;
+         position: absolute;
+         width:100%;
+         left:0;
+         top:9.5em;
+         z-index:1;
+         height:2.5em;
+      }
 		.main-navigation {
          background:$dark-grey;
 			clear: both;
 			display: block;
 			font-size:1em;
-			position:absolute;
-				top:9.5em;
+			position:relative;
+         top:9.5em;
+         left:1.2em;
 			width: 97%;
-			margin:0 1.5%;
 			z-index:99999;
 		}
 		.main-navigation ul {
@@ -221,11 +230,11 @@
 		}
 		.main-navigation .sub-menu {
 			@include transition();
-			border:solid 1px darken($grey, 5%);
-			border-top:none;
+			/*border:solid 1px darken($grey, 5%);
+			border-top:none;*/
 			display: block;
 			float: left;
-			margin:2px 0 0 0;
+			margin:0;
 			opacity:0;
 			position: absolute;
 				top: 2.5em;
