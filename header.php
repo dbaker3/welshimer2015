@@ -88,7 +88,7 @@
             <h4 class="milligan-logo"><a href="<?php echo home_url( '/wiki' ); ?>" title="<?php bloginfo( 'description' ); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/images/wiki-logo.png" /></a></h4>
          <?php }
          else { ?>
-            <h4 class="milligan-logo"><a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'description' ); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/images/head-logo.png" /></a></h4>
+            <h4 class="milligan-logo"><a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'description' ); ?>"></a>&#xe601;</h4>
             <h4 class="welshimer-logo">P.H. Welshimer Memorial Library</h4>
          <?php } ?>
          

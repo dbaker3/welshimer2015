@@ -1,6 +1,12 @@
-/*Colors*/
-$black		: black;
-$white		: white;
+/* -----------------------------------------------------------------------------
+ *                                  Base
+ * ---------------------------------------------------------------------------*/
+
+ 
+/* Colors */
+
+$black		: #000;
+$white		: #fff;
 
 $grey-10 	: darken(white, 10%);
 $grey-20 	: darken(white, 20%);
@@ -34,15 +40,15 @@ $darkdark   : #262626;
 $experimental-support-for-svg: true;
 @mixin nav-gradient() {
 	background: $dark-grey;
-	@include background-image(linear-gradient(lighten($dark-grey, 3%), darken($dark-grey, 3%)));
+	@include background-image(linear-gradient(lighten($dark-grey, 3%), 
+                             darken($dark-grey, 3%)));
 }
 
 /*Font Families*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
-$font-default-color			: black;
-/*$font-default-family			: "Helvetica", "Arial", sans-serif;*/
-$font-default-family        : "Open Sans", sans-serif;
+$font-default-color			: $black;
+$font-default-family       : "Open Sans", sans-serif;
 $font-default-lineheight	: 1.5;
 $font-default-size			: 1.6em;
 $font-default-weight			: regular;
@@ -59,12 +65,11 @@ $font-widget-lineheight		: 1.5;
 $font-widget-size				: 1.2em;
 $font-widget-weight			: regular;
 
-/*Link Colors*/
-$link-color-normal			: black;
-$link-color-hover				: black;
-$link-color-active			: black;
-$link-color-visited			: black;
-$link-color-focus				: black;
+$link-color-normal			: $black;
+$link-color-hover				: $black;
+$link-color-active			: $black;
+$link-color-visited			: $black;
+$link-color-focus				: $black;
 
 $menu-link-color-normal		: $light-grey;
 $menu-link-color-hover		: $white;

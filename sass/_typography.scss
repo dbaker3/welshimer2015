@@ -1,9 +1,16 @@
-/* Typography */
+/* -----------------------------------------------------------------------------
+ *                                  Typography 
+ * ---------------------------------------------------------------------------*/
+ 
+
 @font-face {
     font-family: "icon-font";
     font-style: normal;
     font-weight: normal;
-    src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.svg#icon-font") format("svg");
+    src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), 
+         url("fonts/icomoon.woff") format("woff"), 
+         url("fonts/icomoon.ttf") format("truetype"), 
+         url("fonts/icomoon.svg#icon-font") format("svg");
   }
 
 .body-text {
