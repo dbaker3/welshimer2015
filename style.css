@@ -1040,7 +1040,7 @@ object {
 }
 
 /* Today's Hours */
-.hours-icon:before {
+.clock-icon:before {
   margin-right: 0.5em;
   font-family: icon-font;
   content: "\e600";
