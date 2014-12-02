@@ -68,6 +68,18 @@ adapt(device); //Do first adapt on load
 			jQuery('.widget-area').toggleClass('side-expand-open', 300);
 		}
 	});
+   
+   
+   /* SLide sidebar out/in on mobile for a moment to let people know it's there */
+   if (device !== 'desktop') {
+      jQuery('.widget-area').toggleClass('side-expand-open', 300);
+      setTimeout(function() 
+      {
+         jQuery('.widget-area').toggleClass('side-expand-open', 300);
+      }, 750);
+   }
+   
+   
 
 	jQuery( '#eds-more-toggle' ).click( function() {
 		jQuery( '#eds-more' ).toggleClass('eds-more-open');

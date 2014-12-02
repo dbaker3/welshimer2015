@@ -71,7 +71,7 @@ function welshimer2013_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'welshimer2013' ),
 		'secondary' => __( 'Secondary Menu', 'welshimer2013' ),
-      'wiki' => __( 'Wiki', 'welshimer2013' ),
+      'kb' => __( 'KB', 'welshimer2013' ),
 	) );
 
 	/**

@@ -1,7 +1,7 @@
 <?php
 /**
  * The Header for our theme.
- * Checks if page is using wiki-page template and displays different content if true
+ * Checks if page is using kb-page template and displays different content if true
  *
  * Displays all of the <head> section and everything up till <div id="main">
  *
@@ -63,9 +63,9 @@
 		<h1 class="assistive-text"><?php _e( 'Menu', 'welshimer2013' ); ?></h1>
 		<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'welshimer2013' ); ?>"><?php _e( 'Skip to content', 'welshimer2013' ); ?></a></div>
 
-      <?php // Show wiki menu if using wiki template
-      if (is_page_template('wiki-page.php')) {      
-         wp_nav_menu( array( 'theme_location' => 'wiki' ) );
+      <?php // Show kb menu if using kb-page template
+      if (is_page_template('kb-page.php')) {      
+         wp_nav_menu( array( 'theme_location' => 'kb' ) );
       }
       else {
          wp_nav_menu( array( 'theme_location' => 'primary' ) ); 
@@ -84,8 +84,8 @@
 	<header id="masthead" class="site-header" role="banner">
 		<nav class="secondary-menu menu-text"><div class="secondary-menu-main"><?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?></div><div class="secondary-menu-select"><select><option>Go to...</option></select></div></nav>
 		<hgroup>
-         <?php if (is_page_template('wiki-page.php')) { ?>
-            <h4 class="milligan-logo"><a href="<?php echo home_url( '/wiki' ); ?>" title="<?php bloginfo( 'description' ); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/images/wiki-logo.png" /></a></h4>
+         <?php if (is_page_template('kb-page.php')) { ?>
+            <h4 class="milligan-logo"><a href="<?php echo home_url( '/kb' ); ?>" title="<?php bloginfo( 'description' ); ?>">P.H. Welshimer Memorial Library KB</a></h4>
          <?php }
          else { ?>
             <h4 class="milligan-logo"><a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'description' ); ?>"></a>&#xe601;</h4>

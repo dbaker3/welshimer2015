@@ -142,19 +142,24 @@ body {
 }
 
 .widget-area { /* Sidebar 1 */
-   background:$dark-grey;
+   background: $white; //$dark-grey;
    overflow: visible;
    width: 22em;
    position:absolute;
    top:10em;
-   right:-21em;
+   right:-20.5em;
    @include border-radius();
    z-index:99;
+   transition: right linear 0.25s;
+   border: 1px solid $black;
+   border-right: none;
    @media all and (min-width:800px) {
       background:$milgray;
       @include border-left-radius();
       right:5%;
       top:15.75em;
+      transition: none;
+      border: none;
    }
 }
 
@@ -163,23 +168,26 @@ body {
    position:absolute;
    top:5%;
    left:0;
-   width:1em;
+   width:1.3em;
    height:90%;
-   background-color:$dark-grey;
-   border-right:solid 1px darken($dark-grey, 5%);
+   background-color: $white; //$dark-grey;
+   //border-right:solid 1px darken($dark-grey, 5%);
    z-index:0;
    &:after {
       font-family:icon-font;
       font-size:1em;
-      color:$light-grey;
+      color:$black;
       content: "\e00e";
       position:absolute;
       top:49%;
-      left:2px;
+      left:5px;
       vertical-align:center;
       cursor:pointer;
    }
-   &:hover:after {color:white;}
+   &:hover:after {
+      color:$black;
+      left: 5px;
+   }
    @media all and (min-width:800px) {
       visibility:hidden;
    }
